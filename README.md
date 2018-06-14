@@ -1,5 +1,4 @@
 # Ummae
-![Watch the video](https://github.com/kwonhyeona/ummae/blob/master/introduction_files/Record.mp4)
 ![image](./introduction_files/ummae_img1.png)
 ![image](./introduction_files/ummae_img2.png)
 
