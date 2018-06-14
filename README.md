@@ -1,12 +1,13 @@
 # Ummae
-![image](./info_img/ummae_img1.png)
-![image](./info_img/ummae_img2.png)
+![Watch the video](https://github.com/kwonhyeona/ummae/blob/master/introduction_files/Record.mp4)
+![image](./introduction_files/ummae_img1.png)
+![image](./introduction_files/ummae_img2.png)
 
 ## 소개
 `음성을 텍스트로 변환해 메모로 저장해주는 애플리케이션`입니다.
 
 ## 개발환경
-![image](./info_img/environment.png)
+![image](./introduction_files/environment.png)
 
 ## 팀 인원
 * 개발 
