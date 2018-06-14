@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calenderview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff">
+
+        <Button
+            android:id="@+id/monthPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◁"
+            android:textSize="40dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/monthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="MonthView"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/monthNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▷"
+            android:textSize="40dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:background="@color/white"/>
+    </RelativeLayout>
+
+    <org.androidtown.voice.Calendar.CalendarMonthView
+        android:id="@+id/monthView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+    </org.androidtown.voice.Calendar.CalendarMonthView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dayView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="날짜"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="left"
+            />
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/calenderRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>
+
+

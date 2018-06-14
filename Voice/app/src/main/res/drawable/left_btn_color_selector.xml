@@ -1,0 +1,28 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!--color selector-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 클릭 했을 경우 -->
+    <item android:state_pressed="true">
+        <color android:color="@color/colorPrimaryDark"></color>
+    </item>
+
+    <item android:state_selected="true">
+        <color android:color="@color/colorPrimaryDark"></color>
+    </item>
+
+    <item android:state_checked="true">
+        <color android:color="@color/colorPrimaryDark"></color>
+    </item>
+    <!-- 클릭하지 않은 경우 -->
+    <item android:state_pressed="false" >
+        <color android:color="@color/white"></color>
+    </item>
+
+    <item android:state_selected="false" >
+        <color android:color="@color/white"></color>
+    </item>
+    <item android:state_checked="false">
+        <color android:color="@color/white"></color>
+    </item>
+</selector>

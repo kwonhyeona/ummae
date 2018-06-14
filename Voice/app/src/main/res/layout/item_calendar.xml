@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/day_cell_ll_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <!-- 날짜 -->
+    <TextView
+        android:id="@+id/day_cell_tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:textSize="8dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/day_cell_icon"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/main_icon_mic"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

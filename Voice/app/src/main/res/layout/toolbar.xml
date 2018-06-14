@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/dlt_memo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/back_button"/>
+        <TextView
+            android:id="@+id/tv_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="메모삭제"
+            android:textSize="20sp" />
+
+        <!--<Button-->
+        <!--android:id="@+id/canclebtn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="취소" />-->
+
+        <Button
+            android:layout_marginRight="8dp"
+            android:id="@+id/okbtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/delete_button"
+            android:layout_gravity="right"/>
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

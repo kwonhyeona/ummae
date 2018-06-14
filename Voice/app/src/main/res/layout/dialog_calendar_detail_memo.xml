@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/memo_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="날짜"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/x"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/memo_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="시간"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/contentsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="63dp"
+        android:gravity="center"
+        android:text="메모내용"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="22sp" />
+
+
+</LinearLayout>

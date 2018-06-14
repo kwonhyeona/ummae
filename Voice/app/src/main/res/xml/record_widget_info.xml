@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_record"
+    android:minHeight="72dp"
+    android:minWidth="72dp"
+    android:previewImage="@drawable/main_icon_mic"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="1800000" />

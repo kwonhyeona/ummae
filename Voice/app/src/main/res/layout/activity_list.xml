@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".List.ListFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal|center_vertical">
+
+        <RadioGroup
+            android:id="@+id/list_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/btn_folder"
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/left_btn_color_selector"
+                android:button="@null"
+                android:text="folder"
+                android:checked="true"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/btn_memo"
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:background="@drawable/left_btn_color_selector"
+                android:text="memo"
+                android:button="@null"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/allRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none">
+        </android.support.v7.widget.RecyclerView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/floating_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                fab:menu_animationDelayPerItem="55"
+                android:keepScreenOn="false"
+                fab:menu_buttonSpacing="0dp"
+                fab:menu_colorNormal="#786dfb"
+                fab:menu_colorPressed="#786dfb"
+                fab:menu_colorRipple="#99d4d4d4"
+                fab:menu_fab_size="normal"
+                fab:menu_icon="@drawable/fab_add"
+                fab:menu_openDirection="up">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/add_folder"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/floating_folder_add_button"
+                    fab:fab_colorPressed="#FAF4C0"
+                    fab:fab_size="normal"
+                    fab:fab_label="폴더 추가" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/delete_folder"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/floating_folder_delete_button"
+                    fab:fab_colorPressed="#FAF4C0"
+                    fab:fab_size="normal"
+                    fab:fab_label="폴더 삭제" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/delete_memo"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/floating_folder_delete_button"
+                    fab:fab_colorPressed="#FAF4C0"
+                    fab:fab_size="normal"
+                    fab:fab_label="메모 삭제" />
+
+                <!--<com.github.clans.fab.FloatingActionButton-->
+                    <!--android:id="@+id/move_memo"-->
+                    <!--android:layout_width="58dp"-->
+                    <!--android:layout_height="58dp"-->
+                    <!--android:src="@drawable/floating_move_button"-->
+                    <!--fab:fab_colorPressed="#FAF4C0"-->
+                    <!--fab:fab_size="mini"-->
+                    <!--fab:fab_label="메모 이동" />-->
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

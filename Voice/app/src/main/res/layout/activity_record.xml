@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context="Record.RecordFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_going_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:singleLine="false"
+            android:padding="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/txt_box"
+            android:gravity="center_horizontal"
+            android:text="음성을 입력하세요." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="69dp"
+            android:layout_marginRight="69dp">
+
+            <ToggleButton
+                android:id="@+id/pause"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_pause_click"
+                android:textOff=""
+                android:textOn="" />
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_stop_click" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_save_click"
+                android:onClick="onClick" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ready_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_icon_mic"
+            android:gravity="center"
+            android:textColor="#00000000" />
+    </LinearLayout>
+</RelativeLayout>
