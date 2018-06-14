@@ -54,6 +54,9 @@ public class Memo extends RealmObject {
      //getter, setter 메소드
      ...
 }
+```
+
+```java
 
 public class MemoModel {
      Realm realm;
