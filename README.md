@@ -13,7 +13,7 @@
   - [권현아](https://github.com/kwonhyeona)
   - [고민주](https://github.com/minju54)
   - [여인혜](https://www.instagram.com/y__ih123/?hl=ko)
-  - [진혜민](https://www.instagram.com/hye.min_s2/?hl=ko)
+  - [진혜민](https://github.com/jinhyemin)
 * 디자인
   - [장윤정](http://notefolio.net/yoomm)
   
