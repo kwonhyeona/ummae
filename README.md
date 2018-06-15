@@ -3,7 +3,7 @@
 ![image](./introduction_files/ummae_img2.png)
 
 ## 소개
-`음성을 텍스트로 변환해 메모로 저장해주는 애플리케이션`입니다.
+`음성을 텍스트로 변환해 메모로 저장해주는 애플리케이션 Ummae('음'성 + '메'모)`입니다.
 
 ## 개발환경
 ![image](./introduction_files/environment.png)
