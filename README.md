@@ -12,7 +12,7 @@
 * 개발 
   - [권현아](https://github.com/kwonhyeona)
   - [고민주](https://github.com/minju54)
-  - [여인혜](https://www.instagram.com/y__ih123/?hl=ko)
+  - [여인혜](https://github.com/YEOINHYE)
   - [진혜민](https://github.com/jinhyemin)
 * 디자인
   - [장윤정](http://notefolio.net/yoomm)
